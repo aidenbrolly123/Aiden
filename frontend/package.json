@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate:api": "openapi-typescript ./public/openapi.json -o ./src/types/openapi.ts"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.90.2",
